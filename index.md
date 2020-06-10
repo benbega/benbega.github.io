@@ -1,3 +1,0 @@
-## Welcome to Ben Bega's Website
-
-Coming soon...
