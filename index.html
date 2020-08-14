@@ -1,128 +1,179 @@
 <!DOCTYPE html>
 <html>
 
-	<style>
-        body {
-            color: #EDF5E1;
-            background-color: #041E37;
-            font-family: Arial, sans-serif
+<style>
+    body {
+        color: #EDF5E1;
+        background-color: #041E37;
+        font-family: Arial, sans-serif
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    a:link, a:visited {
+        color: #8EE4AF;
+        padding: 15px 15px;
+        text-align: right;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    a:hover, a:active {
+        color: #379683;
+    }
+
+    .topUL {
+        list-style-type: none;
+        justify-content: right;
+        padding: 0;
+        margin: 10px 3% 0px 0px;
+        text-align: right;
+        font-size: 16px;
+    }
+
+    .topLI {
+        text-align: right;
+        align-items: right;
+        white-space: nowrap;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .thicc {
+        font-weight: bold;
+    }
+
+    .descP {
+        max-width: 30%;
+        word-wrap: break-word;
+    }
+
+    .coreP {
+        max-width: 35%;
+        word-wrap: break-word;
+    }
+
+    .outlineButton {
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: #041E37;
+        color: #8EE4AF;
+        cursor: pointer;
+    }
+
+    .contactButton {
+        font-size 40px;
+        padding: 20px 30px;
+        border-color: #8EE4AF;
+    }
+
+        .contactButton:hover {
+            background-color: #114871;
         }
 
-		html{scroll-behavior: smooth;}
-		h1{font-size:50px;}
-		a:link, a:visited{color: #8EE4AF; padding: 15px 15px; text-align:right; text-decoration:none; display:inline-block;}
-		a:hover, a:active{color: #379683;}
+    .sectionTitles {
+        color: #8EE4AF;
+    }
 
-		.topUL{list-style-type: none; justify-content:right; padding:0; margin:10px 3% 0px 0px; text-align:right; font-size:16px;}
-		.topLI{text-align: right; align-items: right; white-space:nowrap; display: inline-block; margin:0; padding:0; font-size:16px;}
-
-		.thicc{
-			font-weight: bold;
-		}
-
-		.descP{
-			max-width: 30%;
-			word-wrap: break-word;
-		}
-
-		.coreP{
-			max-width: 35%;
-			word-wrap: break-word;
-		}
-
-        .outlineButton {
-            border: 2px solid black;
-            border-radius: 5px;
-            background-color: #041E37;
+        .sectionTitles em {
             color: #8EE4AF;
-            cursor: pointer;
+            font-style: normal;
         }
+</style>
 
-		.contactButton{
-			font-size 40px;
-			padding: 20px 30px;
-			border-color: #8EE4AF;
-		}
-		.contactButton:hover{
-			background-color: #114871;
-		}
+<head>
+    <title>Ben Bega Dot Com</title>
+</head>
 
-        .sectionTitles {
-            color: #8EE4AF;
-        }
-            .sectionTitles em {
-                color: #8EE4AF;
-                font-style: normal;
-            }
-	</style>
+<body>
+    <div>
+        <!-- MENU BAR -->
+        <ul class="topUL">
+            <li class="topLI"><a href="#AboutMe" target="_self">About</a></li>
+            <!--
+            -->
+            <li class="topLI"><a href="#Projects" target="_self">Projects</a></li>
+            <!-- Link to Projects tab
+            -->
+            <li class="topLI"><a href="#Experience" target="_self">Experience</a></li>
+            <!-- link to experience
+            -->
+            <li class="topLI"><a href="#AboutMe" target="_self">Blog</a></li>
+            <!-- link to contact info
+            -->
+            <li class="topLI"><a href="#AboutMe" target="_self">contact</a></li>
+        </ul><!-- link to blog -->
+    </div>
 
-	<head>
-		<title>Ben Bega Dot Com</title>
-	</head>
-	
-	<body>
-	<div> <!-- MENU BAR -->
-		<ul class="topUL"><li class="topLI"><a href="#AboutMe" target="_self">About</a></li><!--
-		--><li class="topLI"><a href="#Projects" target="_self">Projects</a></li><!-- Link to Projects tab
-		--><li class="topLI"><a href="#Experience" target="_self">Experience</a></li><!-- link to experience
-		--><li class="topLI"><a href="#AboutMe" target="_self">Blog</a></li><!-- link to contact info
-		--><li class="topLI"><a href="#AboutMe" target="_self">contact</a></li></ul><!-- link to blog -->
-	</div>
-	
-	<div id="LandingIntro"> <!-- First body -->
-		<p style="font-size: 18px; margin: 150px 0px 15px 12%; color: #5CDB95;" class="">Hi, my name is</p>
+    <div id="LandingIntro">
+        <!-- First body -->
+        <p style="font-size: 18px; margin: 150px 0px 15px 12%; color: #5CDB95;" class="">Hi, my name is</p>
 
-		<p style="font-size: 65px; margin: 0px 0px 5px 12%; color: #8EE4AF;" class="thicc">Benjamin Bega.</p>
+        <p style="font-size: 65px; margin: 0px 0px 5px 12%; color: #8EE4AF;" class="thicc">Benjamin Bega.</p>
 
-		<p style="font-size: 65px; margin: 0px 0px 30px 12%; color: #379683;" class="">I build electronics and XR applications.</p>
+        <p style="font-size: 65px; margin: 0px 0px 30px 12%; color: #379683;" class="">I build electronics and XR applications.</p>
 
-		<!--
-		<p style="font-size: 18px; margin: 0px 0px 40px 12%; color: #379683;" class="descP">I am a computer engineering student at Montana State University in Bozeman, Montana, expecting to graduate in May 2022.</p>
-		-->
-		<button style="margin: 0px 0px 100px 12%;" class="outlineButton contactButton">Get In Touch</button>
-	</div>
+        <!--
+        <p style="font-size: 18px; margin: 0px 0px 40px 12%; color: #379683;" class="descP">I am a computer engineering student at Montana State University in Bozeman, Montana, expecting to graduate in May 2022.</p>
+        -->
+        <button style="margin: 0px 0px 100px 12%;" class="outlineButton contactButton">Get In Touch</button>
+    </div>
 
-	<div id="AboutMe" style="padding-top: 75px;"> <!-- About Me Entry -->
-		<p style="font-size: 26px; margin: 0px 0px 15px 12%;" class="sectionTitles"><em>About Me</em></p>
+    <div id="AboutMe" style="padding-top: 75px;">
+        <!-- About Me Entry -->
+        <p style="font-size: 26px; margin: 0px 0px 15px 12%;" class="sectionTitles"><em>About Me</em></p>
 
-		<p style="font-size: 20px; margin: 0px 0px 20px 12%; color: #379683;" class="descP">Hi! I'm Ben, a computer engineering student in Bozeman, MT.</p>
-		
-		<p style="font-size: 20px; margin: 0px 0px 20px 12%; color: #379683;" class="coreP">I enjoy creating all things related to electronic and extended reality systems.
-		I use Unity3D to build interactive virtual reality scenes across a variety of PC and mobile based headsets, while also building my own electronic systems. My hardware interests range
-		from extended reality headsets to microcontroller powered boardgames.</p>
+        <p style="font-size: 20px; margin: 0px 0px 20px 12%; color: #379683;" class="descP">Hi! I'm Ben, a computer engineering student in Bozeman, MT.</p>
 
-		<p style="font-size: 20px; margin: 0px 0px 20px 12%; color: #379683;" class="coreP">I grew up in the Bay Area, Calfornia, and started attending Montana State University in the fall of 2018.
-		I expect to graduate in May 2022 with a B.S. in Computer Engineering.
-		
-		<p style="font-size: 20px; margin: 0px 0px 0px 12%; color: #379683;" class="coreP">These are some of the technologies I work with:</p>
+        <p style="font-size: 20px; margin: 0px 0px 20px 12%; color: #379683;" class="coreP">
+            I enjoy creating all things related to electronic and extended reality systems.
+            I use Unity3D to build interactive virtual reality scenes across a variety of PC and mobile based headsets, while also building my own electronic systems. My hardware interests range
+            from microcontroller powered boardgames to virtual and augmented reality headsets.
+        </p>
 
-		<p style="font-size: 20px; margin: 0px 0px 0px 12%; color: #379683;" class="coreP">
-			<ul style="font-size: 20px; margin: 0px 0px 100px 12%; color: #379683;" class="coreP">
-				<li>C#, C, Python, Java</li>
-				<li>Unity3D</li>
-				<li>FPGAs, MCUs</li>
-				<li>PSpice, Matlab</li>
-				<li>Displays. Reflective, diffractive optics</li>
-			</ul>
-		</p>
-	</div>
+        <p style="font-size: 20px; margin: 0px 0px 20px 12%; color: #379683;" class="coreP">
+            I grew up in the Bay Area, Calfornia, and started attending Montana State University in the fall of 2018.
+            I expect to graduate in May 2022 with a B.S. in Computer Engineering.
 
-	<div id="Projects" style="padding-top: 75px;"> <!-- Projects Entry -->
-		<p style="		font-size: 26px;
+        <p style="font-size: 20px; margin: 0px 0px 0px 12%; color: #379683;" class="coreP">These are some of the technologies I work with:</p>
+
+        <p style="font-size: 20px; margin: 0px 0px 0px 12%; color: #379683;" class="coreP">
+            <ul style="font-size: 20px; margin: 0px 0px 100px 12%; color: #379683;" class="coreP">
+                <li>C#, C, Python, Java</li>
+                <li>Unity3D</li>
+                <li>FPGAs, MCUs</li>
+                <li>PSpice, Matlab</li>
+                <li>Displays. Reflective, diffractive optics</li>
+            </ul>
+        </p>
+    </div>
+
+    <div id="Projects" style="padding-top: 75px;">
+        <!-- Projects Entry -->
+        <p style="		font-size: 26px;
 		margin: 0px 0px 20px 12%;" class="sectionTitles"><em>Project Gallery</em></p>
 
-		<p style="font-size: 20px; margin: 0px 0px 300px 12%; color: #379683;" class="coreP">.</p>
-	</div>
+        <p style="font-size: 20px; margin: 0px 0px 300px 12%; color: #379683;" class="coreP">.</p>
+    </div>
 
-	<div id="Experience" style="padding-top: 75px;"> <!-- Experience Entry -->
-		<p style="font-size: 26px; margin: 0px 0px 20px 12%;" class="sectionTitles"><em>My Experience</em></p>
+    <div id="Experience" style="padding-top: 75px;">
+        <!-- Experience Entry -->
+        <p style="font-size: 26px; margin: 0px 0px 20px 12%;" class="sectionTitles"><em>My Experience</em></p>
 
-		<p style="font-size: 20px; margin: 0px 0px 0px 12%; color: #379683;" class="coreP">.</p>
+        <p style="font-size: 20px; margin: 0px 0px 0px 12%; color: #379683;" class="coreP">.</p>
 
-		<p style="		font-size: 18px;
+        <p style="		font-size: 18px;
 		margin: 1000px 0px 15px 12%;
 		color: #5CDB95;
 " class="">bottom text</p>
-	</div>
-	</body>
+    </div>
+</body>
 </html>
