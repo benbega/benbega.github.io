@@ -18,8 +18,6 @@
 
     a:link, a:visited {
         color: #8EE4AF;
-        padding: 15px 15px;
-        text-align: right;
         text-decoration: none;
         display: inline-block;
     }
@@ -69,6 +67,11 @@
         cursor: pointer;
     }
 
+    em {
+        color: #379683;
+        font-style: normal;
+    }
+
     .contactButton {
         font-size 40px;
         padding: 20px 30px;
@@ -87,6 +90,13 @@
             color: #8EE4AF;
             font-style: normal;
         }
+
+    .picInlineText {
+        max-width: 35%;
+        word-wrap: break-word;
+        display: inline-block;
+        vertical-align: top;
+    }
 </style>
 
 <head>
@@ -97,32 +107,33 @@
     <div>
         <!-- MENU BAR -->
         <ul class="topUL">
-            <li class="topLI"><a href="#AboutMe" target="_self">About</a></li>
+            <li style="padding: 15px 15px; text-align: right;" class="topLI"><a href="#AboutMe" target="_self">About</a></li>
             <!--
             -->
-            <li class="topLI"><a href="#Projects" target="_self">Projects</a></li>
+            <li style="padding: 15px 15px; text-align: right;" class="topLI"><a href="#Projects" target="_self">Projects</a></li>
             <!-- Link to Projects tab
             -->
-            <li class="topLI"><a href="#Experience" target="_self">Experience</a></li>
+            <li style="padding: 15px 15px; text-align: right;" class="topLI"><a href="#Experience" target="_self">Experience</a></li>
             <!-- link to experience
             -->
-            <li class="topLI"><a href="#AboutMe" target="_self">Blog</a></li>
+            <li style="padding: 15px 15px; text-align: right;" class="topLI"><a href="#AboutMe" target="_self">Blog</a></li>
             <!-- link to contact info
             -->
-            <li class="topLI"><a href="#AboutMe" target="_self">Contact</a></li>
+            <li style="padding: 15px 15px; text-align: right;" class="topLI"><a href="#AboutMe" target="_self">Contact</a></li>
         </ul><!-- link to blog -->
     </div>
 
     <div id="LandingIntro">
         <!-- First body -->
-        <p style="font-size: 18px; margin: 150px 0px 15px 12%; color: #5CDB95;" class="">Hi, my name is</p>
+        <p style=" font-size: 18px; margin: 150px 0px 15px 12%; color: #5CDB95;" class="">Hi, my name is</p>
 
-        <p style="font-size: 65px; margin: 0px 0px 5px 12%; color: #8EE4AF;" class="thicc">Benjamin Bega.</p>
+        <p style="        font-size: 65px;
+        margin: 0px 0px 5px 12%;
+        color: #8EE4AF;" class="thicc">Benjamin Bega.</p>
 
         <p style="font-size: 65px; margin: 0px 0px 30px 12%; color: #379683;" class="">I build electronics and XR applications.</p>
 
         <!--<p style="font-size: 18px; margin: 0px 0px 40px 12%; color: #379683;" class="descP">I am a computer engineering student at Montana State University in Bozeman, Montana, expecting to graduate in May 2022.</p>-->
-        
         <!--<button style="margin: 0px 0px 100px 12%;" class="outlineButton contactButton" onclick="mailto:benjamin.t.bega@gmail.com">Get In Touch</button>-->
 
         <form action="mailto:benjamin.t.bega@gmail.com">
@@ -161,22 +172,25 @@
 
     <div id="Projects" style="padding-top: 75px;">
         <!-- Projects Entry -->
-        <p style="		font-size: 26px;
-		margin: 0px 0px 20px 12%;" class="sectionTitles"><em>Project Gallery</em></p>
+        <div><!-- Project Entry 1-->
+        <p style="font-size: 26px; margin: 0px 0px 20px 12%;" class="sectionTitles"><em>Project Gallery</em></p>
 
-        <p style="font-size: 20px; margin: 0px 0px 300px 12%; color: #379683;" class="coreP">.</p>
+        <img src="supercold.png" alt="SuperCold Logo" style="width: 200px; height: 200px; margin: 0px 0px 0px 12%;">
+
+        <p style="font-size: 20px; margin: 0px 0px 300px 10px; color: #8EE4AF; white-space: pre-line;" class="picInlineText"><a style="font-size: 30px;" href="https://www.youtube.com/watch?v=DWUHZL7hw5U" target="_blank">SuperCold - VR Game</a>
+            <em>SuperCold is a fast paced virtual reality shooter built for the Oculus Quest. It features a physical, skill based teleport system for unique and interactive locomotion, along with multiple weapons choices. The game is built in Unity3D on top of the Virtual Reality Toolkit system.</em>
+        </p>
+        </div>
+
     </div>
 
     <div id="Experience" style="padding-top: 75px;">
         <!-- Experience Entry -->
-        <p style="font-size: 26px; margin: 0px 0px 20px 12%;" class="sectionTitles"><em>My Experience</em></p>
+        <p style="font-size: 26px; margin: 0px 0px 20px 12%; display: inline-block;" class="sectionTitles"><em>My Experience</em></p>
 
         <p style="font-size: 20px; margin: 0px 0px 0px 12%; color: #379683;" class="coreP">.</p>
 
-        <p style="		font-size: 18px;
-		margin: 1000px 0px 15px 12%;
-		color: #5CDB95;
-" class="">bottom text</p>
+        <p style="font-size: 18px; margin: 1000px 0px 15px 12%; color: #5CDB95;" class="">bottom text</p>
     </div>
 </body>
 </html>
