@@ -16,14 +16,22 @@
         font-size: 50px;
     }
 
-    a:link, a:visited {
+    .menuButton:link, .menuButton:visited {
         color: #8EE4AF;
         text-decoration: none;
         display: inline-block;
     }
-
-    a:hover, a:active {
+    .menuButton:hover, .menuButton:active {
         color: #379683;
+    }
+
+    .galleryButton:link, .galleryButton:visited {
+        color: #379683;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .galleryButton:hover, .galleryButton:active {
+        color: #8EE4AF;
     }
 
     .topUL {
@@ -107,19 +115,19 @@
     <div>
         <!-- MENU BAR -->
         <ul class="topUL">
-            <li style="padding: 15px 15px; text-align: right;" class="topLI"><a href="#AboutMe" target="_self">About</a></li>
+            <li style="padding: 15px 15px; text-align: right;" class="topLI"><a href="#AboutMe" target="_self" class="menuButton">About</a></li>
             <!--
             -->
-            <li style="padding: 15px 15px; text-align: right;" class="topLI"><a href="#Projects" target="_self">Projects</a></li>
+            <li style="padding: 15px 15px; text-align: right;" class="topLI"><a href="#Projects" target="_self" class="menuButton">Projects</a></li>
             <!-- Link to Projects tab
             -->
-            <li style="padding: 15px 15px; text-align: right;" class="topLI"><a href="#Experience" target="_self">Experience</a></li>
+            <li style="padding: 15px 15px; text-align: right;" class="topLI"><a href="#Experience" target="_self" class="menuButton">Experience</a></li>
             <!-- link to experience
             -->
-            <li style="padding: 15px 15px; text-align: right;" class="topLI"><a href="#AboutMe" target="_self">Blog</a></li>
+            <li style="padding: 15px 15px; text-align: right;" class="topLI"><a href="#AboutMe" target="_self" class="menuButton">Blog</a></li>
             <!-- link to contact info
             -->
-            <li style="padding: 15px 15px; text-align: right;" class="topLI"><a href="#AboutMe" target="_self">Contact</a></li>
+            <li style="padding: 15px 15px; text-align: right;" class="topLI"><a href="#AboutMe" target="_self" class="menuButton">Contact</a></li>
         </ul><!-- link to blog -->
     </div>
 
@@ -172,14 +180,34 @@
 
     <div id="Projects" style="padding-top: 75px;">
         <!-- Projects Entry -->
-        <div><!-- Project Entry 1-->
+
         <p style="font-size: 26px; margin: 0px 0px 20px 12%;" class="sectionTitles"><em>Project Gallery</em></p>
 
-        <img src="supercold.png" alt="SuperCold Logo" style="width: 200px; height: 200px; margin: 0px 0px 0px 12%;">
+        <div>
+            <!-- Project Entry 1-->
+            <img src="supercold.png" alt="SuperCold Logo" style="width: 200px; height: 200px; margin: 0px 0px 0px 12%;">
 
-        <p style="font-size: 20px; margin: 0px 0px 300px 10px; color: #8EE4AF; white-space: pre-line;" class="picInlineText"><a style="font-size: 30px;" href="https://www.youtube.com/watch?v=DWUHZL7hw5U" target="_blank">SuperCold - VR Game</a>
-            <em>SuperCold is a fast paced virtual reality shooter built for the Oculus Quest. It features a physical, skill based teleport system for unique and interactive locomotion, along with multiple weapons choices. The game is built in Unity3D on top of the Virtual Reality Toolkit system.</em>
-        </p>
+            <p style="font-size: 20px; margin: 0px 0px 50px 10px; color: #8EE4AF; white-space: pre-line;" class="picInlineText">SuperCold - VR Game
+                <em>
+                    SuperCold is a fast paced virtual reality shooter built for the Oculus Quest. It features a physical, skill based teleport system for unique and interactive locomotion, along with multiple weapons choices. The game is built in Unity3D on top of the Virtual Reality Toolkit system.
+
+
+                    <a href="https://github.com/thebigdev433/SuperCold" target="_blank" class="galleryButton">GitHub</a> - <a href="https://sidequestvr.com/app/237" target="_blank" class="galleryButton">SideQuest</a> - <a href="https://www.youtube.com/watch?v=DWUHZL7hw5U" target="_blank" class="galleryButton">YouTube</a>
+                </em>
+            </p>
+        </div>
+
+        <div><!-- Project Entry 2-->
+            <img src="WIP.png" alt="SuperCold Logo" style="width: 200px; height: 200px; margin: 0px 0px 0px 12%;">
+
+            <p style="font-size: 20px; margin: 0px 0px 100px 10px; color: #8EE4AF; white-space: pre-line;" class="picInlineText">Head Mounted Display (WIP)
+                <em>
+                    This is a homemade head mounted display using a standard non polarized birdbath optical design. The headset has a resolution of 240*240 per eye and is powered by a Raspberry Pi running custom GUIs. A controller is planned for future revisions to enable user input.
+
+
+                    <a href="https://github.com/thebigdev433" target="_blank" class="galleryButton">GitHub</a> - <a href="" target="_blank" class="galleryButton">Image Gallery</a>
+                </em>
+            </p>
         </div>
 
     </div>
